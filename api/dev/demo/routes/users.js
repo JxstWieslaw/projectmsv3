@@ -10,7 +10,7 @@ router.route("/")
   .post(UsersController.newUser);
 
 router.route('/:userId')
-    .get(validateParam(schemas.idSchemas,'userId'),UsersController.getUser)
+    .get(validateParam(schemas.idSchema),UsersController.getUser)
     .put(UsersController.replaceUser)
     .patch(UsersController.updateUser);
     // .delete()
@@ -18,6 +18,5 @@ router.route('/:userId')
 router.route('/:userId/cars')
     .get(UsersController.getUserCars)
     .post(UsersController.newUserCar);
-    
 
 module.exports = router;
