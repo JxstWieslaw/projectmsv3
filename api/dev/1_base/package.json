@@ -1,0 +1,33 @@
+{
+  "name": "1_base",
+  "version": "1.0.0",
+  "description": "Project Management System Version 3",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "server": "node server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JxstWieslaw/projectmsv3.git"
+  },
+  "author": "Wieslaw",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JxstWieslaw/projectmsv3/issues"
+  },
+  "homepage": "https://github.com/JxstWieslaw/projectmsv3#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "concurrently": "^7.1.0",
+    "config": "^3.3.7",
+    "express": "^4.17.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.3.0",
+    "nodemon": "^2.0.16",
+    "validator": "^13.7.0"
+  }
+}
